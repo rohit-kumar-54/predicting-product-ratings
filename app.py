@@ -392,7 +392,7 @@ with tab_overview:
             st.plotly_chart(fig_pie, use_container_width=True)
 
         st.markdown("---")
-        st.subheader("📋 Dataset Preview (Synthetic Big Data Sample)")
+        st.subheader("📋 Dataset Preview")
         st.dataframe(df_raw.head(8), use_container_width=True)
 
     else:

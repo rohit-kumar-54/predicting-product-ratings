@@ -1,3 +1,3 @@
 Model,Accuracy,Precision,Recall,F1_Score,ROC_AUC,Training_Time_Sec
-Logistic Regression,1.0,1.0,1.0,1.0,1.0,41.49
-Random Forest,1.0,1.0,1.0,1.0,1.0,33.46
+Logistic Regression,0.968,0.9695,0.968,0.9676,0.9952,44.11
+Random Forest,0.968,0.9695,0.968,0.9676,0.9951,31.33

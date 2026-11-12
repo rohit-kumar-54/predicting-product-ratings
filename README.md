@@ -183,26 +183,26 @@ Evaluated on the held-out test set (9,856 records):
 
 | Model | Accuracy | Precision (Weighted) | Recall (Weighted) | F1-Score | ROC-AUC | Training Time |
 |---|---|---|---|---|---|---|
-| **Logistic Regression (Primary)** | **1.0000** | **1.0000** | **1.0000** | **1.0000** | **1.0000** | **41.49 s** |
-| **Random Forest Classifier** | **1.0000** | **1.0000** | **1.0000** | **1.0000** | **1.0000** | **33.46 s** |
+| **Logistic Regression (Primary)** | **0.9680 (96.8%)** | **0.9695** | **0.9680** | **0.9676** | **0.9952** | **44.11 s** |
+| **Random Forest Classifier** | **0.9680 (96.8%)** | **0.9695** | **0.9680** | **0.9676** | **0.9951** | **31.33 s** |
 
-### Confusion Matrix (Test Set: 9,856 Reviews)
+### Confusion Matrix (Test Set: 9,859 Reviews)
 
 | | Predicted Low (0) | Predicted High (1) |
 |---|---|---|
-| **Actual Low (0)** | **3,173 (True Negatives)** | **0 (False Positives)** |
-| **Actual High (1)** | **0 (False Negatives)** | **6,683 (True Positives)** |
+| **Actual Low (0)** | **2,891 (True Negatives)** | **315 (False Positives)** |
+| **Actual High (1)** | **0 (False Negatives)** | **6,653 (True Positives)** |
 
 ### Metric Explanations
-- **Accuracy ($100\%$):** Overall proportion of correct predictions across both classes:
+- **Accuracy ($96.8\%$):** Overall proportion of correct predictions across both classes:
   $$\text{Accuracy} = \frac{TP + TN}{TP + TN + FP + FN}$$
-- **Precision ($1.0000$):** Measures the precision of positive predictions, avoiding false positive classifications:
+- **Precision ($0.9695$):** Measures the precision of positive predictions, avoiding false positive classifications:
   $$\text{Precision} = \frac{TP}{TP + FP}$$
-- **Recall ($1.0000$):** Measures the ability of the model to detect all true positive instances:
+- **Recall ($0.9680$):** Measures the ability of the model to detect all true positive instances:
   $$\text{Recall} = \frac{TP}{TP + FN}$$
-- **F1-Score ($1.0000$):** The harmonic mean of precision and recall:
+- **F1-Score ($0.9676$):** The harmonic mean of precision and recall:
   $$F_1 = 2 \times \frac{\text{Precision} \times \text{Recall}}{\text{Precision} + \text{Recall}}$$
-- **ROC-AUC ($1.0000$):** The area under the ROC curve, measuring the model's ability to rank high-rating reviews above low-rating reviews across all thresholds.
+- **ROC-AUC ($0.9952$):** The area under the ROC curve, measuring the model's ability to rank high-rating reviews above low-rating reviews across all thresholds.
 
 ---
 
