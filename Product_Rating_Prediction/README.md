@@ -5,6 +5,7 @@
 ![Streamlit](https://img.shields.io/badge/Streamlit-1.65-FF4B4B?style=flat&logo=streamlit&logoColor=white)
 ![Python](https://img.shields.io/badge/Python-3.10-3776AB?style=flat&logo=python&logoColor=white)
 ![Plotly](https://img.shields.io/badge/Plotly-Data%20Viz-3F4F75?style=flat&logo=plotly&logoColor=white)
+[![Deploy to Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/deploy?repository=rohit-kumar-54/predicting-product-ratings&branch=main&mainModule=app.py)
 
 An enterprise-ready, end-to-end Big Data machine learning application that predicts whether an e-commerce product will receive a **High Rating (4-5 Stars)** or a **Low Rating (1-3 Stars)** based on its product category, price, review text sentiment, verified purchase status, and customer historical behavior.
 
@@ -308,3 +309,4 @@ When presenting this project for college evaluation or viva, emphasize these key
 2. **Methodological Rigor (Zero Data Leakage):** Customer review histories (`customer_review_count` and `customer_avg_rating`) are computed sequentially using only transactions strictly prior to the current review, ensuring no future leakage.
 3. **Complete Unified Pipeline:** Text processing (`Tokenizer` $\rightarrow$ `StopWordsRemover` $\rightarrow$ `HashingTF` $\rightarrow$ `IDF`), categorical encoding (`StringIndexer` $\rightarrow$ `OneHotEncoder`), and numerical normalization (`StandardScaler`) are encapsulated in a single, reusable PySpark `PipelineModel`.
 4. **Interactive Real-World Deployment:** The Streamlit dashboard does not rely on mocked values; it directly ingests the actual Spark pipeline artifacts and provides instant real-time predictions.
+
