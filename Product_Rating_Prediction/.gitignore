@@ -1,0 +1,16 @@
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Apache Spark temporary & CRC files
+*.crc
+.system_generated/
+
+# Streamlit local config & cache
+.streamlit/
+
+# OS metadata
+.DS_Store
+Thumbs.db
